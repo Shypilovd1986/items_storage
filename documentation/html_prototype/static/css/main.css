@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Gloock&family=Oswald:wght@200&family=Roboto:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 *{
   margin:0;
 }
 
 body {
-  background: #c0e9f0;
+  background: #faf7e8;
 }
 
 header{
@@ -49,7 +50,7 @@ header{
 }
 
 .site_login_navi ul li .active_login_link{
-  color: green;
+  color: black;
   display:block;
   background-color: #e8bec4;
   width:100px;
@@ -79,8 +80,8 @@ bottom h4{
 
 main{
   display: inline-block;
-  width: 50%;
-  margin-right: 25%;
+  width: 64%;
+  margin-right: 18%;
   margin-top: 30px;
   margin-bottom: 5%;
   background: white;
@@ -93,17 +94,18 @@ main{
 .main_navi{
   float:right;
   font-family: "Roboto";
-  margin-right: 34%;
+  margin-right:37%;
   margin-top: 80px;
+  display: inline-block;
 }
 
 .main_navi ul li{
   list-style: none;
-  display: block;
+  display: inline-block;
   text-align: center;
   line-height: 30px;
   float: left;
-  margin-left: 50px;
+  margin-left: 30px;
   font-size: 18px;
   border-radius: 5px;
   border: 1px black solid;
@@ -120,8 +122,11 @@ main{
   background: #0b5266;
   font-size: 18px;
   border-radius: 5px;
-  border: 1px black solid;
   float:left;
+}
+
+.main_navi ul li:last-child{
+  margin-right: 60px;
 }
 
 .main_navi ul li a:hover {
@@ -130,11 +135,158 @@ main{
 }
 
 .main_navi ul li .active_main_navi{
-  color: green;
+  color: black;
   background-color: #e8bec4;
 }
 
 .main_navi ul li .active_main_navi:hover{
-  color: green;
+  color: white;
   background-color: #e8bec4;
+}
+
+.searching_item{
+    display: block;
+    float:left;
+    margin-top: 20px;
+}
+
+.searching_item input{
+  display: block;
+  float:left;
+  background: white;
+  margin-left: 40px;
+  height: 25px;
+  width: 200px;
+  border: 1px black solid;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.searching_item button{
+  display: block;
+  float:left;
+  background: #deba07;
+  margin-left: 40px;
+  height: 30px;
+  width: 100px;
+  border: 1px black solid;
+  border-radius: 5px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.searching_item button:hover{
+  cursor: pointer;
+}
+
+
+.searching_item label{
+  display: block;
+  float:left;
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+ #label_search_by_date{
+  margin-left: 0;
+}
+
+#add_item{
+  /* border: 1px solid black; */
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 350px;
+}
+
+#add_item p{
+  display: block;
+  /* border: 1px solid black; */
+  width: 250px;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+}
+
+
+.button_add_item{
+  /* display: block; */
+  width: 150px;
+  height: 25px;
+  margin-top: 2px;
+  background: #65ba91;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+  float: left;
+}
+
+#list_of_items{
+  border: 1px solid black;
+  text-align: center;
+  margin-top: -100px;
+  margin-left: 15px;
+}
+
+#list_of_items .long_th{
+  width:150px;
+  font-size: 18px;
+  font-family: "Quicksand";
+  border: 1px solid black;
+  display: block;
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+}
+
+#list_of_items .middle_th{
+  width:100px;
+  font-size: 18px;
+  font-family: "Quicksand";
+  border: 1px solid black;
+  display: block;
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+}
+
+#list_of_items .short_th{
+  width:60px;
+  font-size: 18px;
+  font-family: "Quicksand";
+  border: 1px solid black;
+  display: block;
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+}
+
+#list_of_items th{
+  background: #09384f;
+  color: white;
+}
+
+.button_edit_item{
+  /* display: block; */
+  width: 80px;
+  height: 25px;
+  margin-top: -5px;
+  background: #72c1e8;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.button_delete_item{
+  /* display: block; */
+  width: 80px;
+  height: 25px;
+  margin-top: -5px;
+  background: red;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#list_of_items button:hover{
+  cursor: pointer;
 }
