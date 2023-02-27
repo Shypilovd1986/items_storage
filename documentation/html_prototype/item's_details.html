@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Dmitriy Shypilov">
+    <meta name="keywords" content="store, item">
+    <meta name="description" content="mockup of project">
+    <title>Item's details</title>
+    <link rel='stylesheet' href="static/css/main.css">
+  </head>
+  <body>
+    <header>
+      <div id="site_name">
+        <h1>Items Storage</h1>
+      </div>
+      <div class="site_login_navi">
+          <ul>
+            <li><a href="index.html" class="active_login_link"> Main page </a></li>
+            <li><a href="registration.html"> Registration </a></li>
+            <li><a href="login.html"> Login </a></li>
+          </ul>
+      </div>
+    </header>
+    <div class="main_navi">
+      <ul>
+        <li><a href="index.html"> list of items </a></li>
+        <li><a href="list_of_brands.html"> list of brands </a></li>
+        <li><a class="active_main_navi" href="items's_details.html"> details of items </a></li>
+        <li><a href="brand's_details.html"> details of brands </a></li>
+      </ul>
+    </div>
+    <div class="container_for_search">
+      <form action="" method="" class="searching_item" name="searching_item_by_name">
+        <label for="item's_name">Searching item by name</label><br>
+        <input type="text" placeholder="Input name of item" name="item's_name">
+        <button type="submit">Search</button>
+      </form><br>
+      <form action="" class="searching_item" name="searching_item_by_date">
+        <label for="item's_name" id="label_search_by_date">Searching item by date of production</label><br>
+        <input type="text" placeholder="Input date of production" name="item's_name">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <main>
+      <div id="add_item">
+        <p>Do you want to add some item?</p>
+        <a href="add_item.html">
+          <!-- <form name="add_item" action="" method=""> -->
+          <button class="button_add_item" type="submit" name="button">add item</button>
+          <!-- </form> -->
+        </a>
+      </div>
+      <table id="list_of_items" name="list_of_items">
+                <h4 class="h4_list_of_items">Details of items:</h4>
+        <thead>
+          <tr>
+            <th class="long_th">id</th>
+            <th class="long_th">name</th>
+            <th class="middle_th">colour</th>
+            <th class="middle_th">price</th>
+            <th class="long_th">brand</th>
+            <th class="middle_th">date</th>
+          </tr><br>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="long_th">2900169</td>
+            <td class="long_th">socket</td>
+            <td class="middle_th">black</td>
+            <td class="middle_th">97</td>
+            <td class="long_th">Schneider electric</td>
+            <td class="middle_th">22.02.2022</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+          <tr>
+            <td class="long_th">1350164</td>
+            <td class="long_th">socket</td>
+            <td class="middle_th">white</td>
+            <td class="middle_th">120</td>
+            <td class="long_th">ABB LTD</td>
+            <td class="middle_th">7.06.2019</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+          <tr>
+            <td class="long_th">353412</td>
+            <td class="long_th">single-switch</td>
+            <td class="middle_th">white</td>
+            <td class="middle_th">150</td>
+            <td class="long_th">ABB LTD</td>
+            <td class="middle_th">13.01.2023</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+          <tr>
+            <td class="long_th">353413</td>
+            <td class="long_th">single-switch</td>
+            <td class="middle_th">silver</td>
+            <td class="middle_th">150</td>
+            <td class="long_th">ABB LTD</td>
+            <td class="middle_th">27.02.2021</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+          <tr>
+            <td class="long_th">2900175</td>
+            <td class="long_th">double-switch</td>
+            <td class="middle_th">black</td>
+            <td class="middle_th">130</td>
+            <td class="long_th">Schneider electric</td>
+            <td class="middle_th">15.01.2023</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+          <tr>
+            <td class="long_th">1290342</td>
+            <td class="long_th">socket</td>
+            <td class="middle_th">white</td>
+            <td class="middle_th">290</td>
+            <td class="long_th">Berker</td>
+            <td class="middle_th">1.04.2020</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+          <tr>
+            <td class="long_th">1290343</td>
+            <td class="long_th">socket</td>
+            <td class="middle_th">black</td>
+            <td class="middle_th">290</td>
+            <td class="long_th">Berker</td>
+            <td class="middle_th">17.04.2021</td>
+            <td class="button_th">
+              <form name="edit_item" action="" method="">
+                <button class="button_edit_item" type="submit" name="button">edit</button>
+              </form>
+            </td>
+            <td class="button_th">
+              <form name="delete_item" action="" method="">
+                <button class="button_delete_item" type="submit" name="button">delete</button>
+              </form>
+            </td>
+          </tr><br>
+        </tbody>
+      </table>
+    </main>
+    <bottom>
+      <pre>
+        <h4>© 2023 ShypilovD.   All Rights Reserved.</h4>
+    </pre>
+    </bottom>
+  </body>
+</html>

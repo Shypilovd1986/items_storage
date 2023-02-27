@@ -94,12 +94,23 @@ main{
 .main_navi{
   float:right;
   font-family: "Roboto";
-  margin-right:37%;
+  margin-right:28%;
   margin-top: 80px;
+  display: block;
+  /* border: 1px solid black; */
+  height: 70px;
+}
+
+.main_navi_2{
+  float:right;
+  width: 800px;
+  font-family: "Roboto";
+  margin-right:20%;
+  margin-bottom: 30px;
   display: inline-block;
 }
 
-.main_navi ul li{
+.main_navi ul li, .main_navi_2 ul li{
   list-style: none;
   display: inline-block;
   text-align: center;
@@ -113,7 +124,7 @@ main{
   width:150px;
 }
 
-.main_navi ul li a{
+.main_navi ul li a, .main_navi_2 ul li a{
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -129,12 +140,12 @@ main{
   margin-right: 60px;
 }
 
-.main_navi ul li a:hover {
+.main_navi ul li a:hover , .main_navi_2 ul li a:hover {
   background: #0c6c87;
   color: black;
 }
 
-.main_navi ul li .active_main_navi{
+.main_navi ul li .active_main_navi, .main_navi_2 ul li .active_main_navi{
   color: black;
   background-color: #e8bec4;
 }
@@ -144,10 +155,19 @@ main{
   background-color: #e8bec4;
 }
 
+.container_for_search{
+  /* border: 1px solid black; */
+  float: right;
+  width: 64%;
+  margin-right: 18%;
+}
+
 .searching_item{
     display: block;
-    float:left;
+    float:right;
     margin-top: 20px;
+    margin-right: 400px;
+    /* border: 1px solid black; */
 }
 
 .searching_item input{
@@ -227,17 +247,78 @@ main{
 .h4_list_of_brands{
   display: block;
   width: 200px;
-  margin-top: 30px;
-  margin-left: 100px;
-  margin-bottom: 20px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: 450px;
+  margin-bottom: -50px;
   text-align: center;
+  /* float: right; */
+}
+
+.h4_list_of_brands_2{
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: 430px;
+  margin-bottom: -50px;
+  text-align: center;
+  /* float: right; */
+}
+
+.h4_list_of_items{
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin-top: 50px;
+  margin-left: 400px;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.h3_details_brands{
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 435px;
+  margin-bottom: -50px;
+  text-align: center;
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 40px;
+  background: white;
+  border-radius: 8px;
+}
+
+.header_for_adding_form{
+    display: block;
+    text-align: center;
 }
 
 #list_of_brands{
   /* border: 1px solid black; */
   text-align: center;
-  margin-top: -100px;
+  margin-top: -20px;
   margin-left: 200px;
+  float: left;
+}
+
+#list_common{
+  /* border: 1px solid black; */
+  text-align: center;
+  margin-top: 0;
+  margin-left: 350px;
+  float: left;
+}
+
+#list_common_2{
+  /* border: 1px solid black; */
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 300px;
+  float: left;
 }
 
 #list_of_items{
@@ -247,7 +328,7 @@ main{
   margin-left: 15px;
 }
 
-#list_of_items .very_long_th, #list_of_brands .very_long_th{
+#list_of_items .very_long_th, #list_of_brands .very_long_th, #list_common .very_long_th, #list_common_2 .very_long_th{
   width:200px;
   font-size: 18px;
   font-family: "Quicksand";
@@ -259,7 +340,7 @@ main{
 }
 
 
-#list_of_items .long_th, #list_of_brands .long_th{
+#list_of_items .long_th, #list_of_brands .long_th, #list_common .long_th, #list_common_2 .long_th{
   width:150px;
   font-size: 18px;
   font-family: "Quicksand";
@@ -270,7 +351,7 @@ main{
   float: left;
 }
 
-#list_of_items .middle_th, #list_of_brands .middle_th{
+#list_of_items .middle_th, #list_of_brands .middle_th, #list_common .middle_th, #list_common_2 .middle_th{
   width:100px;
   font-size: 18px;
   font-family: "Quicksand";
@@ -281,7 +362,7 @@ main{
   float: left;
 }
 
-#list_of_items .button_th, #list_of_brands .button_th{
+#list_of_items .button_th, #list_of_brands .button_th, #list_common .button_th{
   width:100px;
   font-size: 18px;
   font-family: "Quicksand";
@@ -293,7 +374,7 @@ main{
   border: none;
 }
 
-#list_of_items .short_th, #list_of_brands .short_th{
+#list_of_items .short_th, #list_of_brands .short_th, #list_common .short_th{
   width:60px;
   font-size: 18px;
   font-family: "Quicksand";
@@ -304,7 +385,7 @@ main{
   float: left;
 }
 
-#list_of_items th, #list_of_brands th{
+#list_of_items th, #list_of_brands th, #list_common th, #list_common_2 th{
   background: #09384f;
   color: white;
 }
@@ -399,14 +480,3 @@ main{
   text-align: center;
   background: #65ba91;
 }
-
-/* .main_list_of_brands_page{
-  display: block;
-  width: 64%;
-  margin-right: 18%;
-  margin-top: 90px;
-  margin-bottom: 5%;
-  background: #faf7e8;
-  height:1000px;
-  float: right;
-} */

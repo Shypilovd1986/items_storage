@@ -5,7 +5,7 @@
     <meta name="author" content="Dmitriy Shypilov">
     <meta name="keywords" content="store, item">
     <meta name="description" content="mockup of project">
-    <title>List of categories</title>
+    <title>Brand's details</title>
     <link rel='stylesheet' href="static/css/main.css">
   </head>
   <body>
@@ -23,19 +23,23 @@
     </header>
     <div class="main_navi">
       <ul>
-        <li><a href="index.html" > Items </a></li>
-        <li><a href="" class="active_main_navi"> Brands </a></li>
+        <li><a href="index.html"> list of items </a></li>
+        <li><a href="list_of_brands.html"> list of brands </a></li>
+        <li><a href="item's_details.html"> details of items </a></li>
+        <li><a class="active_main_navi"  href="brand's_details.html"> details of brands </a></li>
       </ul>
     </div>
     <main >
       <div id="add_item">
         <p>Do you want to add new brand?</p>
-        <form name="add_brand" action="" method="">
+        <a href="add_brand.html">
+        <!-- <form name="add_brand" action="" method=""> -->
           <button class="button_add_item" type="submit" name="button">add brand</button>
-        </form><br>
-        <h4 class="h4_list_of_brands">List of brands:</h4>
+        <!-- </form><br> -->
+      </a>
       </div>
       <table id="list_of_brands" name="list_of_brands">
+        <h4 class="h4_list_of_brands">Details of brands:</h4>
         <thead>
           <tr>
             <th class="middle_th">brand's id</th>
