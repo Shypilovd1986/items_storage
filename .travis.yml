@@ -1,8 +1,7 @@
 language: python
+python:
+  - "3.6"
 
-python:                 
-   - "3.9.6"                                                             
-      
-script: python main.py
+install: "pip install-r requirements.txt"
 
-# remember to lint  
+script: " flask run"
