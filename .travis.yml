@@ -9,7 +9,7 @@ install:
 
 script:
   - "coverage run -m pytest tests"
-  - "pylint app"
+  - "pylint main.py"
 after_script:
   - "coveralls"
 
