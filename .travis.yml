@@ -8,8 +8,8 @@ install:
 
 
 script:
-  - coverage run -m pytest tests
-  - pylint app
+  - "coverage run -m pytest tests"
+  - "pylint app"
 after_script:
-  - coveralls
+  - "coveralls"
 
