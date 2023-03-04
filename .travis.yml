@@ -2,6 +2,12 @@ language: python
 python:
   - "3.9.6"
 
-install: "pip install -r requirements.txt"
+install:
+  - "pip install -r requirements.txt"
 
-script: " flask run"
+script:
+  - coverage run -m pytest tests
+  - pylint app
+after_success:
+  - coveralls
+
