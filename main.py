@@ -1,5 +1,3 @@
-from app import app
+""" App to work with items depends on its brand"""
 
-def square(val):
-    square_val = val * val
-    return square_val
+from app import app
