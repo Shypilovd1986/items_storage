@@ -1,15 +1,20 @@
 """describing metadata and for installing requirements """
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="UTF-8") as readme_file:
+    long_description = readme_file.read()
+
 setup(
-    include_package_data=True,
     name="ItemStorage",
-    version="0.0.1",
+    version="2.0.1",
+    description="ItemStorage python app",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Dmitriy Shypilov",
     author_email="shypilovd@gmail.com",
     license="MIT",
     packages=find_packages(),
-    description="ItemStorage python app",
+    include_package_data=True,
     url="https://github.com/Shypilovd1986/items_storage",
     install_requires=[
         'astroid==2.15.0',
@@ -56,9 +61,17 @@ setup(
         'wrapt==1.15.0',
         'zipp==3.15.0'
     ],
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "License :: MIT License",
+        "Operating System :: OS Independent",
+        "Programing language :: Python :: 3.9.6"
+    ],
     entry_points={
         'console_scripts': [
             'item-storage=app.main:run_app_item_storage'
         ],
+
     }
 )
