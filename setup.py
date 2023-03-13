@@ -58,7 +58,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'item-storage=python main.py'
+            'item-storage=app.main:run_app_item_storage'
         ],
     }
 )
