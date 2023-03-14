@@ -1,10 +1,11 @@
+""" create connector for creating db"""
 import mysql.connector as mod
 
 
 conn = mod.connect(
     host="localhost",
     user="root",
-    passwd="19865421",
+    password="19865421"
 )
 
 my_cursor = conn.cursor()
