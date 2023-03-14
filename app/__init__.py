@@ -3,17 +3,13 @@
 from flask import Flask
 from flask_migrate import Migrate
 from .config import Config
-import sqlalchemy as db
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
 app.config.from_object(Config)
 
-
-# engine = db.create_engine('mysql+pymysql://root:19865421@localhost/items_storage', echo=True)
-# connection = engine.connect()
-# metadata = db.MetaData()
-
-# migrate = Migrate(app, db)
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 from app.views import views
