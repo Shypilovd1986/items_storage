@@ -1,4 +1,4 @@
-""" App to work with items depends on its brand"""
+""" App to work with items depends on its brands"""
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
