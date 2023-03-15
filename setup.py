@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="UTF-8") as readme_file:
 
 setup(
     name="ItemStorage",
-    version="2.0.1",
+    version="2.0.2",
     description="ItemStorage python app",
     long_description=long_description,
     long_description_content_type="text/markdown",
